@@ -1,7 +1,7 @@
 {
     "name": "gpt-3-app",
     "version": "0.0.1",
-    "private": false,
+    "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",

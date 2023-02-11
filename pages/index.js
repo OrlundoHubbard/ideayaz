@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
   // React Hooks
   const [data, setData] = useState({ text: "" });
-  const [query, setQuery] = useState();
+  const [query, setQuery] = useState("");
   const [search, setSearch] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -30,7 +30,7 @@ export default function Home() {
       }
     };
 
-    fetchData();
+    console.log(fetchData());
   }, [search]);
 
   // What we want to render
