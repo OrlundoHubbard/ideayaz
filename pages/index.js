@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 
-
 export default function Home() {
   // React Hooks
   const [data, setData] = useState({ text: "" });
@@ -29,8 +28,8 @@ export default function Home() {
         setIsLoading(false);
       }
     };
-
-    console.log(fetchData());
+    fetchData();
+    // console.log(fetchData());
   }, [search]);
 
   // What we want to render
